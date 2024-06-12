@@ -9,7 +9,7 @@ import os
 import argparse
 
 # Configurer le logging
-logging.basicConfig(filename='C:/Users/lproudhom/Documents/Web/Alt/network_scan.log', level=logging.DEBUG,
+logging.basicConfig(filename='network_scan.log', level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Limite le nombre de threads actifs à 50
