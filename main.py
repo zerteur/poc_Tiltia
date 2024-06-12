@@ -127,10 +127,10 @@ def analyze_host(host):
 
 def save_results_to_json(filename):
     # Create results directory if it doesn't exist
-    if not os.path.exists('C:/Users/lproudhom/Documents/Web/Alt/results'):
+    if not os.path.exists('results'):
         os.makedirs('results')
 
-    filepath = os.path.join('C:/Users/lproudhom/Documents/Web/Alt/results', filename)
+    filepath = os.path.join('results', filename)
     with open(filepath, 'w') as json_file:
         json.dump(scan_results, json_file, indent=4)
         logging.info(f"Results saved to {filepath}")
